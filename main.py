@@ -1,10 +1,16 @@
-from flask import Flask, jsonify
-import gdown
+# This is a sample Python script.
 
-app = Flask(__name__)
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-@app.route('/run-colab')
-def run_colab():
-    gdown.download('https://drive.google.com/file/d/10b1o6w-yYmX7xmWYn3cDxraKv454jlk_', 'colab.ipynb', quiet=False)
-    return jsonify(message='colab notebook ran successfully')
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
